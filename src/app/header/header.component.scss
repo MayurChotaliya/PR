@@ -1,0 +1,38 @@
+.dashboard-header {
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      color: #000000;
+      background-color: white;
+      justify-content: space-around;
+      width: 100%;
+      z-index: 1000;
+  
+    }
+  
+
+    .header-text {
+      flex-grow: 1;
+    }
+    
+    .profile-section {
+      display: flex;
+      align-items: center;
+    }
+    .profile-pic {
+        width: 70px; /* Adjust profile picture size as needed */
+        height: 70px; /* Adjust profile picture size as needed */
+        border-radius: 8px; /* Create rounded corners */
+        margin-right: 10px;
+        border: 2px;
+        object-fit: cover;
+        border: 2px;
+        border-style:dotted;
+        border-color: #000000;
+      }
+      
+      .username {
+        font-weight: bold;
+      }

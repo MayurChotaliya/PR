@@ -1,0 +1,14 @@
+<p-toolbar class="bottom-nav" [style]="{'width': '100%', 'text-align': 'center', 'background-color': '#1e3556', 'padding': '1rem 2.8rem'}">
+    <a routerLink="/dashboard" class="bottom-nav-link" [ngClass]="{'active-icon': isActiveRoute('/dashboard')}">
+      <i class="pi pi-th-large" ></i>
+      <span class="icon-text">Dashboard</span>
+    </a>
+    <a routerLink="/member" class="bottom-nav-link" [ngClass]="{'active-icon': isActiveRoute('/member')}">
+      <i class="pi pi-user" ></i>
+      <span class="icon-text">Member</span>
+    </a>
+    <a routerLink="/add-member" class="bottom-nav-link" [ngClass]="{'active-icon': isActiveRoute('/add-member')}">
+      <i class="pi pi-plus-circle" ></i>
+      <span class="icon-text">Add Member</span>
+    </a>
+  </p-toolbar>

@@ -1,0 +1,182 @@
+<div class="dashboard-header">
+    <div class="header-text">
+      <h1>Members</h1>
+    </div>
+    <div class="float-end" (click)="sidebarVisible4 = true">
+        <span class="subtext">Filter </span>
+    </div> 
+</div>
+
+
+
+
+<div class="list-container">
+  <div class="button-container">
+    <button pButton type="button" label="All Members" class="p-button p-button-primary"></button>
+    <button pButton type="button" label="My Members" class="p-button p-button-primary"></button>
+  </div>
+
+  <!-- <span class="p-input-icon-right textBox-container ">
+    <i class="pi pi-search"></i>
+    <input type="text" class="p-inputtext-sm " pInputText  />
+</span> -->
+
+  <div class="notification-card">
+    <div class="card-content">
+        <span class="card-text">3 filter applied </span>
+        <p-button label="Clear" styleClass="p-button-text"></p-button>
+      </div>
+</div>
+
+<div class="directory-container" (click)="goToDetail()">
+    <div class="profile-pic">
+      <p-avatar label="TT"  styleClass="mr-2" value="4" size="xlarge" [style]="{ 'background-color': '#323f4f', color: '#ffffff' }"></p-avatar>
+    </div>
+    <div class="details">
+      <h2 class="full-name">{{fullName}}</h2>
+      <div class="chips">
+        <p-chip *ngFor="let chip of chips" label="{{chip}}"></p-chip>
+      </div>
+    </div>
+    <div class="menu-button">
+      <!-- <p-menu #menu [model]="menuItems" popup="true"></p-menu> -->
+      <button pButton type="button" icon="pi pi-ellipsis-v" class="p-button-rounded p-button-text" ></button>
+    </div>
+  </div>
+  
+  <div class="directory-container">
+    <div class="profile-pic">
+      <p-avatar label="U" pBadge styleClass="mr-5" style="font-size: 2rem" severity="danger" value="" size="xlarge" [style]="{ 'background-color': '#4caf4f', color: '#ffffff' }"></p-avatar>
+
+    </div>
+    <div class="details">
+      <h2 class="full-name">{{fullName}}</h2>
+      <div class="chips">
+        <p-chip *ngFor="let chip of chips" label="{{chip}}"></p-chip>
+      </div>
+    </div>
+    <div class="menu-button">
+      <!-- <p-menu #menu [model]="menuItems" popup="true"></p-menu> -->
+      <button pButton type="button" icon="pi pi-ellipsis-v" class="p-button-rounded p-button-text" ></button>
+    </div>
+  </div>
+
+  <div class="directory-container">
+    <div class="profile-pic">
+      <p-avatar label="TT"  styleClass="mr-2" value="4" size="xlarge" [style]="{ 'background-color': '#4caf4f', color: '#ffffff' }"></p-avatar>
+
+    </div>
+    <div class="details">
+      <h2 class="full-name">{{fullName}}</h2>
+      <div class="chips">
+        <p-chip *ngFor="let chip of chips" label="{{chip}}" class="small-chip"></p-chip>
+      </div>
+    </div>
+    <div class="menu-button">
+      <!-- <p-menu #menu [model]="menuItems" popup="true"></p-menu> -->
+      <button pButton type="button" icon="pi pi-ellipsis-v" class="p-button-rounded p-button-text" ></button>
+    </div>
+  </div>
+  <div class="directory-container">
+    <div class="profile-pic">
+      <p-avatar label="TT"  styleClass="mr-2" value="4" size="xlarge" [style]="{ 'background-color': '#4caf4f', color: '#ffffff' }"></p-avatar>
+
+    </div>
+    <div class="details">
+      <h2 class="full-name">{{fullName}}</h2>
+      <div class="chips">
+        <p-chip *ngFor="let chip of chips" label="{{chip}}" class="small-chip"></p-chip>
+      </div>
+    </div>
+    <div class="menu-button">
+      <!-- <p-menu #menu [model]="menuItems" popup="true"></p-menu> -->
+      <button pButton type="button" icon="pi pi-ellipsis-v" class="p-button-rounded p-button-text" ></button>
+    </div>
+  </div>
+  <div class="directory-container">
+    <div class="profile-pic">
+      <p-avatar label="TT"  styleClass="mr-2" value="4" size="xlarge" [style]="{ 'background-color': '#4caf4f', color: '#ffffff' }"></p-avatar>
+
+    </div>
+    <div class="details">
+      <h2 class="full-name">{{fullName}}</h2>
+      <div class="chips">
+        <p-chip *ngFor="let chip of chips" label="{{chip}}" class="small-chip"></p-chip>
+      </div>
+    </div>
+    <div class="menu-button">
+      <!-- <p-menu #menu [model]="menuItems" popup="true"></p-menu> -->
+      <button pButton type="button" icon="pi pi-ellipsis-v" class="p-button-rounded p-button-text" ></button>
+    </div>
+  </div>
+  <div class="directory-container">
+    <div class="profile-pic">
+      <p-avatar label="TT"  styleClass="mr-2" value="4" size="xlarge" [style]="{ 'background-color': '#4caf4f', color: '#ffffff' }"></p-avatar>
+
+    </div>
+    <div class="details">
+      <h2 class="full-name">{{fullName}}</h2>
+      <div class="chips">
+        <p-chip *ngFor="let chip of chips" label="{{chip}}" class="small-chip"></p-chip>
+      </div>
+    </div>
+    <div class="menu-button">
+      <!-- <p-menu #menu [model]="menuItems" popup="true"></p-menu> -->
+      <button pButton type="button" icon="pi pi-ellipsis-v" class="p-button-rounded p-button-text" ></button>
+    </div>
+  </div>
+  <div class="directory-container">
+    <div class="profile-pic">
+      <p-avatar label="TT"  styleClass="mr-2" value="4" size="xlarge" [style]="{ 'background-color': '#4caf4f', color: '#ffffff' }"></p-avatar>
+
+    </div>
+    <div class="details">
+      <h2 class="full-name">{{fullName}}</h2>
+      <div class="chips">
+        <p-chip *ngFor="let chip of chips" label="{{chip}}" class="small-chip"></p-chip>
+      </div>
+    </div>
+    <div class="menu-button">
+      <!-- <p-menu #menu [model]="menuItems" popup="true"></p-menu> -->
+      <button pButton type="button" icon="pi pi-ellipsis-v" class="p-button-rounded p-button-text" ></button>
+    </div>
+  </div>
+  <div class="directory-container">
+    <div class="profile-pic">
+      <p-avatar label="TT"  styleClass="mr-2" value="4" size="xlarge" [style]="{ 'background-color': '#4caf4f', color: '#ffffff' }"></p-avatar>
+
+    </div>
+    <div class="details">
+      <h2 class="full-name">{{fullName}}</h2>
+      <div class="chips">
+        <p-chip *ngFor="let chip of chips" label="{{chip}}" class="small-chip"></p-chip>
+      </div>
+    </div>
+    <div class="menu-button">
+      <!-- <p-menu #menu [model]="menuItems" popup="true"></p-menu> -->
+      <button pButton type="button" icon="pi pi-ellipsis-v" class="p-button-rounded p-button-text" ></button>
+    </div>
+  </div>
+  <div class="directory-container">
+    <div class="profile-pic">
+      <p-avatar label="TT"  styleClass="mr-2" value="4" size="xlarge" [style]="{ 'background-color': '#4caf4f', color: '#ffffff' }"></p-avatar>
+
+    </div>
+    <div class="details">
+      <h2 class="full-name">{{fullName}}</h2>
+      <div class="chips">
+        <p-chip *ngFor="let chip of chips" label="{{chip}}" class="small-chip"></p-chip>
+      </div>
+    </div>
+    <div class="menu-button">
+      <!-- <p-menu #menu [model]="menuItems" popup="true"></p-menu> -->
+      <button pButton type="button" icon="pi pi-ellipsis-v" class="p-button-rounded p-button-text" ></button>
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+<app-bottom-navigation></app-bottom-navigation>

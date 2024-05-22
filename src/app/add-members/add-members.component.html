@@ -1,0 +1,28 @@
+<div class="dashboard-header">
+    <div class="header-text">
+      <h1>Add Member</h1>
+      <span class="subtext"><i class="pi pi-circle-fill" style="font-size: 0.65rem"></i>- Person Info -<i class="pi pi-circle-fill" style="font-size: 0.65rem"></i>-<i class="pi pi-circle-fill" style="font-size: 0.65rem"></i>-<i class="pi pi-circle-fill" style="font-size: 0.65rem"></i> </span>
+    </div>
+    <div class="float-end">
+        <i class="pi pi-times"  (click)="goBack()" style="font-size: 1.5rem"></i>
+    </div>
+    
+</div>
+
+
+
+<p-button (click)="goBack()"  label="Member" icon="pi pi-chevron-left" styleClass="p-button-rounded p-button-secondary p-button-text"></p-button>
+
+
+
+<footer>
+    <button pButton type="button" class="next-button" (click)="goBack()">Next</button>
+</footer>
+
+
+
+<p-toolbar class="bottom-nav" [style]="{'width': '100%', 'text-align': 'center', 'background-color': '#1e3556', 'padding': '1rem 10.1rem'}">
+    <a routerLink="/add-member" class="bottom-nav-link full-width-button" [ngClass]="{'active-icon': isActiveRoute('/add-member')}">
+        <button [style]="{'width':'300%'}" pButton type="button" label="Next" class="custom-button"  icon="pi pi-arrow-right"  iconPos="right"></button>
+    </a>
+  </p-toolbar>
